@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: #161617;
+}
+
+/******************HEADER CSS********************/
+header{ 
+	background-color: #000;
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 150px;
+}
+
+.logo_admin{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+.cust_data a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+	padding-left: 30px;
+}
+
+.cust_data a:hover{
+	color: #FFDB51;
+}
+
+
+/***********section-navbar*************/
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.navbar{
+	position: relative;
+	width: 100%;
+	border-bottom: 2px solid #fff;
+    padding-right: 120px;
+}
+
+.navbar ul{
+	text-align: right;
+	background-color: #161617;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar li{
+	display: inline-block;
+}
+
+.navbar a{
+	text-decoration: none;
+	width:100px;
+	display: block;
+	padding: 20px 15px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.navbar a:hover{
+	font-size: 17px;
+    color: #317af0;
+}
+
+/* --------------------------------------------- */
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    /* height: 95%; */
+    padding-bottom: 40px;
+    top: 30px;
+    left: 50px;
+
+}
+
+/* -----------------------------card---------------------- */
+
+.card {
+    position: relative;
+    width: 260px;
+    height: 580px;
+    
+    float: right;
+    border: 1px solid #cfc5cf;
+    border-radius: 6px;
+}
+
+.picture {
+    margin-top: 10px;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #cfc5cf;
+
+}
+
+.picture img {
+    width: 140px;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #cfc5cf;
+
+}
+
+.picture div {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 550;
+    color: #fff;
+    font-style: italic;
+}
+
+.picture a {
+    position: absolute;
+    background: #2554a1;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    cursor: pointer;
+    right: 55px;
+    top: 110px;
+}
+
+.picture a:hover{
+    background: #fff;
+    color: #2554a1;
+}
+
+
+.card ul {
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.card ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #c5c5c5;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cfc5cf;
+    padding-left: 20px;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.card ul li a i {
+
+    min-width: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card ul li:hover a {
+    color: #2554a1;
+    font-size: 18px;
+}
+
+.card ul li:hover a i {
+    margin-right: 5px;
+}
+
+
+.out {
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    height: 50px;
+}
+
+.out a {
+    font-size: 18px;
+    text-decoration: none;
+    color:#2554a1;
+}
+
+.out a i {
+    font-size: 14px;
+    padding-right: 2px;
+}
+
+.out a:hover {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* -----------------------------------------content--------------------- */
+
+.content {
+    position: relative;
+    width: calc(100% - 350px);
+    height:fit-content;
+    border: 1px solid #cfc5cf;
+    border-radius: 6px;
+    padding: 20px 20px;
+}
+
+.profile-images-card{
+    height: 160px;
+    width: 100%;
+    margin: auto;
+    display: table;
+    padding: 30px 50px;
+    text-align:-webkit-center;
+    border:1px dashed #cfc5cf ;
+}
+
+.profile-images{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.custom-file{
+    margin: auto;
+    margin-top: 15px;
+}
+
+.custom-file input[type="file"]{
+    display: none;
+  
+}
+
+.up{
+    margin-top: 50px;
+    margin-left: 42px;
+    /* text-align: right; */
+}
+.up input[type="submit"]{
+    align-self: center;
+    width: 150px;
+    height: 35px;  
+    border: none;
+    background: #2554a1;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.up input[type="submit"]:hover{
+    background:none;
+    font-size: 17px;
+    color: whitesmoke;
+    border: 1px solid #cfc5cf;
+}
+

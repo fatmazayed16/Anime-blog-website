@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif ;
+
+}
+
+body{
+    background: #888;
+}
+/* -------------------header-------------- */
+header{
+    position: fixed;
+	background-color: #000;
+	width: 100%;
+    height: 50px;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 150px;
+    border-bottom: 2px solid #fff;
+}
+
+.logo_admin{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+/* ------------------------header----------------- */
+
+/* ----------------side bar------------------------ */
+.sidebar{
+    position: fixed;
+    top: 50px;
+    width: 260px;
+    height: calc(100% - 50px);
+    background: #18191a;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02);
+    z-index: 2;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background: #2554a1;
+    /* font-size: 20px; */
+}
+
+.sidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i{
+
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.status{
+    background: #2554a1;
+}
+
+/* -----------------sidebar-------------------- */
+
+/* ---------------------main------------------ */
+
+.main{
+    position: absolute;
+    top:50px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+    background:#323232;
+}
+
+.cards{
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.number{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 35px;
+    padding-left: 10px;
+}
+
+.precent{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+
+
+.card-name{
+    color: #888;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.icon-box{
+    align-self: baseline;
+}
+
+.icon-box i{
+    font-size: 14px;
+
+}
+
+#card1 .number,#card1 .icon-box i{
+    color: rgb(206, 40, 40);
+}
+
+#card2 .number,#card2 .icon-box i{
+    color: rgb(211, 186, 42);
+}
+#card3 .number,#card3 .icon-box i{
+    color: rgb(53, 93, 224);
+}
+
+
+.charts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px ;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 123.2%;
+}
+
+.chart h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}

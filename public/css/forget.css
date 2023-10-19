@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ /*this is to set new default*/
+	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#161617;
+}
+
+/*-----------body--------*/
+header{ 
+	background-color: #000;
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 150px;
+}
+
+.logo_admin{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+.cust_data a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+	padding-left: 30px;
+}
+
+.cust_data a:hover{
+	color: #FFDB51;
+}
+
+
+/*--------------------------*/
+
+
+/*-------------content-----------*/
+
+.flex{
+    width: 550px;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 30px;
+    border: 2px solid #cfc5cf;
+    border-radius: 6px;
+    color: white;
+}
+
+.flex h2{
+    width: 97%;
+    font-size: 20px;
+    margin: 15px 10px 0px 10px;
+    padding: 12px 12px;
+    border: 2px solid #cfc5cf;
+    border-radius: 6px;
+}
+
+.flex div{
+    padding: 7px;
+}
+
+
+form label{
+    display: flex;
+    font-size: 14px;
+    margin:3px 0px 10px 10px;
+}
+
+
+form input{
+    width: 480px;
+    height: auto;
+    padding: 7px;
+    margin-left: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid #cfc5cf;
+    border-radius: 5px;
+}
+
+
+input[type="submit"]{
+    align-self: center;
+    width: 150px;
+    height: 35px;  
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #2554a1;
+    margin: 10px 0px 10px 330px;
+    
+}
+input[type="submit"]:hover{
+    background:none;
+    font-size: 17px;
+    color: whitesmoke;
+    border: 2px solid #cfc5cf;
+}
+
+.forget form div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
